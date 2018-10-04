@@ -1,11 +1,22 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { MyselfComponent } from './myself/myself.component';
+import { ReportComponent } from './report/report.component';
+import { DescriptionComponent } from './description/description.component';
 
 const routes: Routes = [
   {
-    path: '',
-    children: []
-  }
+    path: 'report',
+    component:ReportComponent
+  },
+    {
+    path: 'myself',
+    component:MyselfComponent
+  },
+      {
+    path: 'description',
+    component:DescriptionComponent
+  },
 ];
 
 @NgModule({
